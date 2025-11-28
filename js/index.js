@@ -1296,10 +1296,10 @@ handleProduct(1);
 const modaal = document.getElementById("modal-data");
 function modalFun(mpodalData) {
   const productFind = product_data.find((val) => val.p_id == mpodalData);
-  modaal.innerHTML = `<div class="col-5"><img src="${productFind.img}" alt="${
+  modaal.innerHTML = `<div class="col-md-5 col-sm-12"><img src="${productFind.img}" alt="${
     productFind.product_name
   }" class="my-1"></div>
-  <div class="col-7"><h4>${
+  <div class="col-md-7 col-sm-12"><h4>${
     productFind.product_name
   }</h4> <h5><strong>Quantity - </strong>${productFind.weight}</h5>
   <h5><strong>₹${productFind.price.toFixed(
