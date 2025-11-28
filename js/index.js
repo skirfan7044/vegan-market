@@ -1253,7 +1253,7 @@ function handleProduct(dataId) {
         productList.innerHTML = productFilter
           .map(
             (product) => `
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="col-xxl-3 col-lg-4 col-sm-6 col-xs-12">
            <div class="card" role="button">
   <img src="${product.img}" alt="${product.product_name}" 
        loading="lazy" 
@@ -1296,10 +1296,10 @@ handleProduct(1);
 const modaal = document.getElementById("modal-data");
 function modalFun(mpodalData) {
   const productFind = product_data.find((val) => val.p_id == mpodalData);
-  modaal.innerHTML = `<div class="col-md-5 col-sm-12"><img src="${productFind.img}" alt="${
+  modaal.innerHTML = `<div class="col-lg-5 col-sm-12"><img src="${productFind.img}" alt="${
     productFind.product_name
   }" class="my-1"></div>
-  <div class="col-md-7 col-sm-12 mt-sm-3"><h4>${
+  <div class="col-lg-7 col-sm-12 mt-4"><h4>${
     productFind.product_name
   }</h4> <h5><strong>Quantity - </strong>${productFind.weight}</h5>
   <h5><strong>₹${productFind.price.toFixed(
