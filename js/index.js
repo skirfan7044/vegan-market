@@ -1867,13 +1867,12 @@ function renderCart() {
   }
 }
 
-const handleSidebar = document.getElementById("handle-sidebar");
 const sidebarID = document.getElementById("sidebar-div");
 
-if (handleSidebar && sidebarID) {
-  handleSidebar.addEventListener("click", function () {
-    sidebarID.classList.toggle("active");
-  });
+if (sidebarID) {
+  document.getElementById("handle-sidebar").onclick = function () {
+    document.querySelector(".position-div").classList.toggle("active");
+  };
 }
 
 function updateQty(id, change) {

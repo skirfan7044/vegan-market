@@ -817,7 +817,7 @@ footer h6 {
 }
 
 .my-order {
-  margin-top: 160px;
+  margin-top: 150px;
   min-height: 300px;
 }
 
@@ -832,6 +832,7 @@ footer h6 {
 
 .my-order h2 {
   color: var(--gr-two);
+  font-weight: 500;
   font-size: clamp(22px, 3vw, 34px);
 }
 
@@ -863,11 +864,12 @@ footer h6 {
 }
 
 .profile {
-  padding: 160px 0 0;
+  padding: 150px 0 0;
 }
 
 .profile .profile-info h2 {
   color: var(--gr-two);
+  font-weight: 500;
 }
 
 .form-control {
@@ -891,13 +893,13 @@ footer h6 {
   }
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   footer {
     justify-content: space-between;
   }
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .nav-right .location {
     display: none;
   }
@@ -946,7 +948,7 @@ footer h6 {
   }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   body {
     max-height: 100dvh;
     font-family: var(--font-one);
@@ -1008,7 +1010,7 @@ footer h6 {
     padding: 15px 20px;
   }
   footer div {
-    margin: 0px 20px;
+    margin: 0px 0px;
   }
 
   .services {
@@ -1103,7 +1105,10 @@ footer h6 {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .cart h1 {
+    font-weight: 500;
+  }
   .services .service-card img {
     width: 40px;
   }
@@ -1141,10 +1146,6 @@ footer h6 {
     padding: 0 10px;
   }
 
-  .item {
-    position: static;
-  }
-
   .item .category-box .position-div {
     width: 0;
     position: fixed;
@@ -1152,12 +1153,14 @@ footer h6 {
     max-height: 500px;
     margin-top: 0px;
     top: 100px;
+    left: -220px;
     overflow: hidden;
-    transition: 400ms ease;
+    transition: left 400ms ease;
   }
 
   .item .category-box .position-div.active {
     width: 220px;
+    left: 0;
   }
 
   .item .category-list {
@@ -1207,7 +1210,7 @@ footer h6 {
   }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .profile {
     padding-top: 100px;
   }
@@ -1221,7 +1224,7 @@ footer h6 {
   }
 
   .item .category-box .position-div {
-    top: 70px;
+    top: 80px;
   }
   .nav-right .search-form {
     width: calc(100% - 85px);
