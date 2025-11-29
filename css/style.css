@@ -235,7 +235,7 @@ nav {
   color: var(--gr-two);
   border-radius: 50%;
   position: fixed;
-  z-index: 9;
+  z-index: 10;
   bottom: 40px;
   border: none;
   box-shadow: var(--bs-one);
@@ -892,7 +892,7 @@ footer h6 {
 }
 
 @media (max-width: 1400px) {
-    footer {
+  footer {
     justify-content: space-between;
   }
 }
@@ -1208,11 +1208,11 @@ footer h6 {
 }
 
 @media (max-width: 576px) {
-    .profile {
+  .profile {
     padding-top: 100px;
   }
 
-   #exampleModal .modal-dialog {
+  #exampleModal .modal-dialog {
     max-width: 90vw;
   }
 
@@ -1220,15 +1220,15 @@ footer h6 {
     width: 90vw;
   }
 
-    .item .category-box .position-div {
-      top: 70px;
-    }
+  .item .category-box .position-div {
+    top: 70px;
+  }
   .nav-right .search-form {
     width: calc(100% - 85px);
   }
 
   nav {
-    min-height: 70px;
+    min-height: 80px;
   }
 
   .search-form button {
@@ -1258,7 +1258,7 @@ footer h6 {
   }
 
   .banner {
-    margin-top: 70px;
+    margin-top: 80px;
   }
 
   .cart {
