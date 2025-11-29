@@ -1867,13 +1867,8 @@ function renderCart() {
   }
 }
 
-const sidebarID = document.getElementById("sidebar-div");
-
-if (sidebarID) {
-  document.getElementById("handle-sidebar").onclick = function () {
-  alert("working");
-    document.querySelector(".position-div").classList.toggle("active");
-  };
+function handleSidebar() {
+  document.querySelector(".position-div").classList.toggle("active");
 }
 
 function updateQty(id, change) {
