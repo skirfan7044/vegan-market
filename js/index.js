@@ -1871,6 +1871,7 @@ const sidebarID = document.getElementById("sidebar-div");
 
 if (sidebarID) {
   document.getElementById("handle-sidebar").onclick = function () {
+  alert("working");
     document.querySelector(".position-div").classList.toggle("active");
   };
 }
